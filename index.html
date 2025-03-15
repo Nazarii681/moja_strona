@@ -3,66 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaawansowana Strona Internetowa</title>
+    <title>Mega Strona</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-gray-900 text-white">
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-transparent px-6 py-4">
+        <ul class="flex justify-between items-center">
+            <li><a href="#home" class="text-xl font-semibold text-white hover:text-gray-400">Home</a></li>
+            <li><a href="#about" class="text-xl font-semibold text-white hover:text-gray-400">About</a></li>
+            <li><a href="#services" class="text-xl font-semibold text-white hover:text-gray-400">Services</a></li>
+            <li><a href="#contact" class="text-xl font-semibold text-white hover:text-gray-400">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section id="home">
-        <h1>Welcome to Our Advanced Webpage</h1>
-        <p>Your success begins here!</p>
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We provide exceptional web development services with cutting-edge technology.</p>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-card">
-            <h3>Web Design</h3>
-            <p>We create visually stunning websites tailored to your needs.</p>
-        </div>
-        <div class="service-card">
-            <h3>Development</h3>
-            <p>Our development process ensures fast, responsive, and scalable websites.</p>
-        </div>
-        <div class="service-card">
-            <h3>SEO Optimization</h3>
-            <p>Boost your visibility and ranking with our SEO services.</p>
+    <!-- Home Section with Parallax Effect -->
+    <section id="home" class="h-screen bg-cover bg-center relative" style="background-image: url('background.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="flex justify-center items-center h-full z-10">
+            <h1 class="text-6xl font-extrabold text-white tracking-wider">Welcome to Our Mega Website</h1>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 text-center bg-gray-800">
+        <h2 class="text-4xl font-semibold mb-6">About Us</h2>
+        <p class="text-lg max-w-4xl mx-auto">We are a team of passionate developers and designers who create top-notch websites. Our goal is to bring your ideas to life with modern technology.</p>
+    </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <!-- Services Section with Cards -->
+    <section id="services" class="py-20 px-6 bg-gray-900">
+        <h2 class="text-4xl text-center text-white mb-10">Our Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="service-card bg-gray-700 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4">Web Design</h3>
+                <p>Create stunning, responsive websites tailored to your brand.</p>
+            </div>
+            <div class="service-card bg-gray-700 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4">Development</h3>
+                <p>Fast, scalable websites built with the latest technologies.</p>
+            </div>
+            <div class="service-card bg-gray-700 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4">SEO Optimization</h3>
+                <p>Improve your website’s search engine ranking and visibility.</p>
+            </div>
+        </div>
+    </section>
 
-            <button type="submit">Submit</button>
+    <!-- Contact Section with Form -->
+    <section id="contact" class="py-20 px-6 bg-gray-800">
+        <h2 class="text-4xl text-center text-white mb-6">Contact Us</h2>
+        <form class="max-w-xl mx-auto">
+            <input type="text" placeholder="Your Name" class="w-full p-4 mb-4 text-lg rounded bg-gray-700 text-white">
+            <input type="email" placeholder="Your Email" class="w-full p-4 mb-4 text-lg rounded bg-gray-700 text-white">
+            <textarea placeholder="Your Message" class="w-full p-4 mb-4 text-lg rounded bg-gray-700 text-white"></textarea>
+            <button type="submit" class="w-full p-4 bg-blue-600 text-white rounded">Submit</button>
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Advanced Webpage. All Rights Reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2025 Mega Website. All Rights Reserved.</p>
     </footer>
 
     <script src="scripts.js"></script>
 </body>
 </html>
+
 
