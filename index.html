@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mega Strona</title>
+    <title>Piłka Nożna - Mega Strona</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,46 +14,69 @@
         <ul class="flex justify-between items-center">
             <li><a href="#home" class="text-xl font-semibold text-white hover:text-gray-400">Home</a></li>
             <li><a href="#about" class="text-xl font-semibold text-white hover:text-gray-400">About</a></li>
-            <li><a href="#services" class="text-xl font-semibold text-white hover:text-gray-400">Services</a></li>
+            <li><a href="#teams" class="text-xl font-semibold text-white hover:text-gray-400">Teams</a></li>
+            <li><a href="#matches" class="text-xl font-semibold text-white hover:text-gray-400">Matches</a></li>
             <li><a href="#contact" class="text-xl font-semibold text-white hover:text-gray-400">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Home Section with Parallax Effect -->
-    <section id="home" class="h-screen bg-cover bg-center relative" style="background-image: url('background.jpg');">
+    <section id="home" class="h-screen bg-cover bg-center relative" style="background-image: url('football_background.jpg');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="flex justify-center items-center h-full z-10">
-            <h1 class="text-6xl font-extrabold text-white tracking-wider">Welcome to Our Mega Website</h1>
+            <h1 class="text-6xl font-extrabold text-white tracking-wider">Welcome to the Football World</h1>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-20 px-6 text-center bg-gray-800">
-        <h2 class="text-4xl font-semibold mb-6">About Us</h2>
-        <p class="text-lg max-w-4xl mx-auto">We are a team of passionate developers and designers who create top-notch websites. Our goal is to bring your ideas to life with modern technology.</p>
+        <h2 class="text-4xl font-semibold mb-6">About Football</h2>
+        <p class="text-lg max-w-4xl mx-auto">Football, or soccer as it is known in some countries, is the most popular sport in the world. With billions of fans and players worldwide, it's more than just a game – it's a passion that unites people across cultures and borders.</p>
     </section>
 
-    <!-- Services Section with Cards -->
-    <section id="services" class="py-20 px-6 bg-gray-900">
-        <h2 class="text-4xl text-center text-white mb-10">Our Services</h2>
+    <!-- Teams Section with Cards -->
+    <section id="teams" class="py-20 px-6 bg-gray-900">
+        <h2 class="text-4xl text-center text-white mb-10">Top Football Teams</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-            <div class="service-card bg-gray-700 p-8 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-semibold mb-4">Web Design</h3>
-                <p>Create stunning, responsive websites tailored to your brand.</p>
+            <div class="team-card bg-gray-700 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4">FC Barcelona</h3>
+                <p>One of the most successful and popular clubs in the world, known for its attractive attacking play.</p>
             </div>
-            <div class="service-card bg-gray-700 p-8 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-semibold mb-4">Development</h3>
-                <p>Fast, scalable websites built with the latest technologies.</p>
+            <div class="team-card bg-gray-700 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4">Manchester United</h3>
+                <p>With a rich history, Manchester United is one of the most iconic clubs in football.</p>
             </div>
-            <div class="service-card bg-gray-700 p-8 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-semibold mb-4">SEO Optimization</h3>
-                <p>Improve your website’s search engine ranking and visibility.</p>
+            <div class="team-card bg-gray-700 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4">Bayern Munich</h3>
+                <p>A dominant force in German football with multiple Bundesliga titles and UEFA Champions League wins.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Matches Section with Latest Results -->
+    <section id="matches" class="py-20 px-6 bg-gray-800">
+        <h2 class="text-4xl text-center text-white mb-6">Latest Matches</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="match-card bg-gray-700 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4">Real Madrid vs Barcelona</h3>
+                <p class="text-lg">Date: 20th March 2025</p>
+                <p>Result: 3-2</p>
+            </div>
+            <div class="match-card bg-gray-700 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4">Liverpool vs Chelsea</h3>
+                <p class="text-lg">Date: 22nd March 2025</p>
+                <p>Result: 1-1</p>
+            </div>
+            <div class="match-card bg-gray-700 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4">Juventus vs AC Milan</h3>
+                <p class="text-lg">Date: 24th March 2025</p>
+                <p>Result: 2-0</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section with Form -->
-    <section id="contact" class="py-20 px-6 bg-gray-800">
+    <section id="contact" class="py-20 px-6 bg-gray-900">
         <h2 class="text-4xl text-center text-white mb-6">Contact Us</h2>
         <form class="max-w-xl mx-auto">
             <input type="text" placeholder="Your Name" class="w-full p-4 mb-4 text-lg rounded bg-gray-700 text-white">
@@ -65,11 +88,12 @@
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-6 text-center">
-        <p>&copy; 2025 Mega Website. All Rights Reserved.</p>
+        <p>&copy; 2025 Football World. All Rights Reserved.</p>
     </footer>
 
     <script src="scripts.js"></script>
 </body>
 </html>
+
 
 
