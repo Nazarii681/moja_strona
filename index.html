@@ -9,91 +9,81 @@
 </head>
 <body class="bg-gray-900 text-white">
 
-    <!-- Navbar -->
+    <!-- Nawigacja -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-transparent px-6 py-4">
         <ul class="flex justify-between items-center">
-            <li><a href="#home" class="text-xl font-semibold text-white hover:text-gray-400">Home</a></li>
-            <li><a href="#about" class="text-xl font-semibold text-white hover:text-gray-400">About</a></li>
-            <li><a href="#teams" class="text-xl font-semibold text-white hover:text-gray-400">Teams</a></li>
-            <li><a href="#matches" class="text-xl font-semibold text-white hover:text-gray-400">Matches</a></li>
-            <li><a href="#contact" class="text-xl font-semibold text-white hover:text-gray-400">Contact</a></li>
+            <li><a href="#home" class="text-xl font-semibold text-white hover:text-gray-400">Strona Główna</a></li>
+            <li><a href="#about" class="text-xl font-semibold text-white hover:text-gray-400">O Nas</a></li>
+            <li><a href="#teams" class="text-xl font-semibold text-white hover:text-gray-400">Drużyny</a></li>
+            <li><a href="#matches" class="text-xl font-semibold text-white hover:text-gray-400">Mecze</a></li>
+            <li><a href="#contact" class="text-xl font-semibold text-white hover:text-gray-400">Kontakt</a></li>
         </ul>
     </nav>
 
-    <!-- Home Section with Parallax Effect -->
+    <!-- Sekcja Główna z Efektem Paralaksy -->
     <section id="home" class="h-screen bg-cover bg-center relative" style="background-image: url('football_background.jpg');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="flex justify-center items-center h-full z-10">
-            <h1 class="text-6xl font-extrabold text-white tracking-wider">Welcome to the Football World</h1>
+            <h1 class="text-6xl font-extrabold text-white tracking-wider">Witamy w Świecie Piłki Nożnej</h1>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Sekcja O Nas -->
     <section id="about" class="py-20 px-6 text-center bg-gray-800">
-        <h2 class="text-4xl font-semibold mb-6">About Football</h2>
-        <p class="text-lg max-w-4xl mx-auto">Football, or soccer as it is known in some countries, is the most popular sport in the world. With billions of fans and players worldwide, it's more than just a game – it's a passion that unites people across cultures and borders.</p>
+        <h2 class="text-4xl font-semibold mb-6">O Piłce Nożnej</h2>
+        <p class="text-lg max-w-4xl mx-auto">Piłka nożna to najpopularniejszy sport na świecie. Z miliardami fanów i graczy na całym świecie, to nie tylko gra – to pasja, która łączy ludzi ponad kulturami i granicami.</p>
     </section>
 
-    <!-- Teams Section with Cards -->
+    <!-- Sekcja Drużyn -->
     <section id="teams" class="py-20 px-6 bg-gray-900">
-        <h2 class="text-4xl text-center text-white mb-10">Top Football Teams</h2>
+        <h2 class="text-4xl text-center text-white mb-10">Najlepsze Drużyny Piłkarskie</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             <div class="team-card bg-gray-700 p-8 rounded-lg shadow-lg">
                 <h3 class="text-2xl font-semibold mb-4">FC Barcelona</h3>
-                <p>One of the most successful and popular clubs in the world, known for its attractive attacking play.</p>
+                <p>Jedna z najbardziej utytułowanych i popularnych drużyn na świecie, znana z ofensywnej gry.</p>
             </div>
             <div class="team-card bg-gray-700 p-8 rounded-lg shadow-lg">
                 <h3 class="text-2xl font-semibold mb-4">Manchester United</h3>
-                <p>With a rich history, Manchester United is one of the most iconic clubs in football.</p>
+                <p>Klub o bogatej historii, jedna z najbardziej ikonicznych drużyn w piłce nożnej.</p>
             </div>
             <div class="team-card bg-gray-700 p-8 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-semibold mb-4">Bayern Munich</h3>
-                <p>A dominant force in German football with multiple Bundesliga titles and UEFA Champions League wins.</p>
+                <h3 class="text-2xl font-semibold mb-4">Bayern Monachium</h3>
+                <p>Dominująca siła w niemieckiej piłce nożnej, wielokrotny mistrz Bundesligi i zdobywca Ligi Mistrzów UEFA.</p>
             </div>
         </div>
     </section>
 
-    <!-- Matches Section with Latest Results -->
+    <!-- Sekcja Meczów -->
     <section id="matches" class="py-20 px-6 bg-gray-800">
-        <h2 class="text-4xl text-center text-white mb-6">Latest Matches</h2>
+        <h2 class="text-4xl text-center text-white mb-6">Ostatnie Mecze</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             <div class="match-card bg-gray-700 p-8 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-semibold mb-4">Real Madrid vs Barcelona</h3>
-                <p class="text-lg">Date: 20th March 2025</p>
-                <p>Result: 3-2</p>
+                <h3 class="text-2xl font-semibold mb-4">Real Madryt vs Barcelona</h3>
+                <p class="text-lg">Data: 20 marca 2025</p>
+                <p>Wynik: 3-2</p>
             </div>
             <div class="match-card bg-gray-700 p-8 rounded-lg shadow-lg">
                 <h3 class="text-2xl font-semibold mb-4">Liverpool vs Chelsea</h3>
-                <p class="text-lg">Date: 22nd March 2025</p>
-                <p>Result: 1-1</p>
+                <p class="text-lg">Data: 22 marca 2025</p>
+                <p>Wynik: 1-1</p>
             </div>
             <div class="match-card bg-gray-700 p-8 rounded-lg shadow-lg">
                 <h3 class="text-2xl font-semibold mb-4">Juventus vs AC Milan</h3>
-                <p class="text-lg">Date: 24th March 2025</p>
-                <p>Result: 2-0</p>
+                <p class="text-lg">Data: 24 marca 2025</p>
+                <p>Wynik: 2-0</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section with Form -->
-    <section id="contact" class="py-20 px-6 bg-gray-900">
-        <h2 class="text-4xl text-center text-white mb-6">Contact Us</h2>
-        <form class="max-w-xl mx-auto">
-            <input type="text" placeholder="Your Name" class="w-full p-4 mb-4 text-lg rounded bg-gray-700 text-white">
-            <input type="email" placeholder="Your Email" class="w-full p-4 mb-4 text-lg rounded bg-gray-700 text-white">
-            <textarea placeholder="Your Message" class="w-full p-4 mb-4 text-lg rounded bg-gray-700 text-white"></textarea>
-            <button type="submit" class="w-full p-4 bg-blue-600 text-white rounded">Submit</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
+    <!-- Stopka -->
     <footer class="bg-gray-900 text-white py-6 text-center">
-        <p>&copy; 2025 Football World. All Rights Reserved.</p>
+        <p>&copy; 2025 Świat Piłki Nożnej. Wszelkie prawa zastrzeżone.</p>
     </footer>
 
     <script src="scripts.js"></script>
 </body>
 </html>
+
 
    
 
